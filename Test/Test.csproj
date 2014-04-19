@@ -190,7 +190,6 @@
     <Content Include="Images\Kings\8.jpg" />
     <Content Include="Images\Kings\9.jpg" />
     <Content Include="Scripts\example1_appviewmodel.js" />
-    <Content Include="Scripts\example3.js" />
     <Content Include="Scripts\example4.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -215,7 +214,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BachController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KingsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

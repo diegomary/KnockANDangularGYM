@@ -2,41 +2,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>  
-    <script src="~/Scripts/example3.js"></script> 
+    <title>Index</title>    
 </head>
-<body>   
-    <form data-bind="submit: getKings">
-        <button type="submit">Get Kings</button>
-    </form>
-    <div data-bind="with: resultData">
-        <p>All Kings retrieved at<span data-bind="text: retrievalDate"> </span></p>
-        <ol style="padding-left: 0;" data-bind="foreach: topKings">
-            <li style="margin: .6em 0; list-style: none; padding-left: 0; ">
-                <div data-bind="style: { background: KingColor }" style="color:white;font-weight:300; border-radius: 8px; border: 1px solid black; padding:10px;width:700px">
-                    <div style="float:left;width:70%">
-                        <span style="vertical-align:top" data-bind="text: Name"></span>
-                        <br />
-                        <textarea rows="4" data-bind="value: Description" style="border-radius:5px; width:95%; vertical-align: top"></textarea>
-                    </div>
-                    <div style="">
-                        <img width="100" height="125" data-bind="attr:{ src: ImagePath }" alt="Missing" style="vertical-align: middle; border-radius:8px">
-                        <button style="vertical-align: top" type="button" data-bind="click: function () { $root.updateSingleRow(Id,Description);}">
-                            Update
-                        </button>
-                    </div>
-                </div>
-            </li>
-        </ol>
-    </div>
-    <div data-bind="if: pagingVisible">
-        <button data-bind="click: previousPage"> << </button>
-        <label data-bind="text: currentPageIndex() + 1"></label>
-        <button data-bind="click: nextPage"> >> </button> 
-        <span>Page Size</span><select data-bind="options: availablePageSizes,value:pageSize">Page size</select>              
-        <button data-bind="click: clearResults">Hide Kings</button>
-        <button data-bind="click: addNewKing">Add new King</button>
-        <button data-bind="click: updateAllKings">Update all changes</button>
-    </div>
+<body>  
+   
 </body>
 </html>
