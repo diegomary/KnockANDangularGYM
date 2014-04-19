@@ -69,5 +69,23 @@ namespace Test.Controllers
         }
 
 
+        [HttpPost]
+        [AllowAnonymous]
+        public string GetImage(object Pi, string Message) // note that function's  parameters here are not used, it is just passed from the client
+        {
+            Random r = new Random((int)System.DateTime.Now.Ticks);
+            int R = r.Next(0, 256);
+            String Rstr = R.ToString("x"); Rstr = Rstr.Length == 1 ? (Rstr = "0" + Rstr) : Rstr;
+            int G = r.Next(0, 256);
+            String Gstr = G.ToString("x"); Gstr = Gstr.Length == 1 ? (Gstr = "0" + Gstr) : Gstr;
+            int B = r.Next(0, 256);
+            String Bstr = B.ToString("x"); Bstr = Bstr.Length == 1 ? (Bstr = "0" + Bstr) : Bstr;
+            String Completecolor = "#" + Rstr + Gstr + Bstr;
+            int t = r.Next(1, 65);
+            string img = @"../Images/Kings/" + t.ToString() + ".jpg" + " " + Completecolor.ToString();
+            return img;
+        }
+
+
 	}
 }

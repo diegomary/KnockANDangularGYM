@@ -2,38 +2,116 @@
 <html>
 <head>  
         <meta name="viewport" content="width=device-width" />
-        <title>Example2</title>       
+        <title>Shuffler</title>
+    <script src="~/Scripts/shuffler.js"></script>
         <script type='text/javascript'>
             $(document).ready(function () { });
         </script>
 </head>
-<body>
-    <h3>This sample explains the visible binding and the computed observables</h3>
-    <input data-bind="value: fullName,valueUpdate: 'afterkeydown'">
-    <br />
-    <input data-bind='visible:checkVisible, value: compositName'>
-    <br />
-    <button data-bind="click: checkVisibility">Click me</button>
-    
-    <script type='text/javascript'>
-        function AppViewModel()
-        {
-            self= this;
-            self.fullName = ko.observable("Diego Burlando");
-            /* Computed Observables */
-            self.compositName = ko.computed(function () { return self.fullName() + "| Constant Part |"; }, this);
-            /*     */
-            self.checkVisible = ko.observable(false);
-            self.toggleDetails = function (flag) { self.checkVisible(flag); }
-            self.disableDetails = function () { self.checkVisible(false); }
-            self.checkVisibility = function ()
-            {                            
-                if (!self.checkVisible()) self.toggleDetails(true);
-                else self.toggleDetails(false);
-            }
+<body>  
+    <table onclick="StartRandom(500,$(this))" style="width: 1000px; height: 500px; margin: 0 auto; border-radius: 7px 10px 10px 7px">
+      <caption>Click on the surface to start Shuffling</caption>
+        <tbody>
+        <tr style="vertical-align:central ">
+            <td align="center" style="width: 200px; ">
 
-        }
-        ko.applyBindings(new AppViewModel());
-    </script>
+                <img id="img1" onclick="" src="~/Images/Kings/12.jpg" style="width: 90px; height: 120px; border:thin; border-radius: 7px 10px 10px 7px;" />
+            </td>
+            <td align="center" style="width: 200px;">
+
+
+                <img id="img2" onclick="" src="~/Images/Kings/18.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px;">
+
+
+                <img id="img3" onclick="" src="~/Images/Kings/42.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img4" onclick="" src="~/Images/Kings/52.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img5" onclick="" src="~/Images/Kings/19.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+        </tr>
+        <tr style="vertical-align:central ">
+            <td align="center" style="width: 200px; ">
+
+                <img id="img6" onclick="" src="~/Images/Kings/1.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img7" onclick="" src="~/Images/Kings/2.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img8" onclick="" src="~/Images/Kings/9.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img9" onclick="" src="~/Images/Kings/24.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img10" onclick="" src="~/Images/Kings/28.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+        </tr>
+        <tr style="vertical-align:central ">
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img11" onclick="" src="~/Images/Kings/12.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img12" onclick="" src="~/Images/Kings/59.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img13" onclick="" src="~/Images/Kings/60.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img14" onclick="" src="~/Images/Kings/18.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+            </td>
+            <td align="center" style="width: 200px; ">
+
+
+                <img id="img15" onclick="" src="~/Images/Kings/62.jpg" style="width: 90px; height: 120px; border: thin; border-radius: 7px 10px 10px 7px; " />
+
+            </td>
+        </tr>
+        </tbody>
+      </table>
+   
+
+    <p id="hd1" style="display: none;"></p>
+    <p id="hd2" style="display: none;"></p>
+    <p id="hd3" style="display: none;"></p>
+    <p id="hd4" style="display: none;"></p>
+    <p id="hd5" style="display: none;"></p>
+    <p id="hd6" style="display: none;"></p>
+    <p id="hd7" style="display: none;"></p>
+    <p id="hd8" style="display: none;"></p>
+    <p id="hd9" style="display: none;"></p>
+    <p id="hd10" style="display: none;"></p>
+    <p id="hd11" style="display: none;"></p>
+    <p id="hd12" style="display: none;"></p>
+    <p id="hd13" style="display: none;"></p>
+    <p id="hd14" style="display: none;"></p>
+    <p id="hd15" style="display: none;"></p>
+    
+    
 </body>
 </html>

@@ -206,6 +206,7 @@
     <Content Include="Scripts\knockout-3.1.0.util.js" />
     <Content Include="Scripts\Product.js" />
     <Content Include="Scripts\ProductsViewModel.js" />
+    <Content Include="Scripts\shuffler.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
