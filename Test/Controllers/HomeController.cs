@@ -69,24 +69,5 @@ namespace Test.Controllers
         }
 
 
-        [HttpGet]
-        public JsonResult GetData1(string Data)
-        {
-            List<ThoughtwithId> th = new List<ThoughtwithId>();
-            th.Add(new ThoughtwithId { Id = 1, text = "Life is Wonderful if you want it to be" });
-            th.Add(new ThoughtwithId { Id = 2, text = "The blue sky is always motivating" });
-            th.Add(new ThoughtwithId { Id = 3, text = "Practice Practice Practice and you'll get it done" });
-            th.Add(new ThoughtwithId { Id = 4, text = "Peace comes from thinking that nothing can hurt us." });
-            th.Add(new ThoughtwithId { Id = 5, text = "The main reason we need to improve is because we don't want to worsen." });
-            return Json(th, JsonRequestBehavior.AllowGet);
-        }
-
-        [HttpPost]
-        public ActionResult PostData1(List<ThoughtwithId> Ps)
-        {
-            return Json(new { Result = "Update Successful" });
-        }
-
-
 	}
 }
