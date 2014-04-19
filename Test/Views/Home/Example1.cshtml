@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>   
+    <script type='text/javascript'>
+        $(document).ready(function () { });
+    </script>
+</head>
+<body>
+    <h3>This sample explains the foreach binding and how to get data from server using Ajax GET</h3>
+    <form data-bind="submit: getThoughts">
+        Thinker name:
+        <input data-bind="value: thinkerName" />
+        <button type="submit">Get thoughts</button>
+    </form>
+    <div data-bind="with: resultData">
+        <h3>Thoughts of the day collected at <span data-bind="text: retrievalDate"> </span></h3>
+        <ol data-bind="foreach: topThoughts">
+            <li style="margin: .6em 0" ><input data-bind="value: text" style="width:500px"></li>
+        </ol>
+        <button data-bind="click: $parent.clearResults">Clear thoughts of the day</button>
+        <button data-bind="click: $parent.addNewthought">Add hought of the day</button>
+        <button data-bind="click: $parent.updateAllthoughts">Update all changes</button>
+    </div>
+
+    <script src="~/Scripts/example1_appviewmodel.js"></script>
+</body>
+</html>
+
+

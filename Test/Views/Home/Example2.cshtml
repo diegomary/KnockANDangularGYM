@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>  
+        <meta name="viewport" content="width=device-width" />
+        <title>Example2</title>       
+        <script type='text/javascript'>
+            $(document).ready(function () { });
+        </script>
+</head>
+<body>
+    <h3>This sample explains the visible binding and the computed observables</h3>
+    <input data-bind="value: fullName,valueUpdate: 'afterkeydown'">
+    <br />
+    <input data-bind='visible:checkVisible, value: compositName'>
+    <br />
+    <button data-bind="click: checkVisibility">Click me</button>
+    
+    <script type='text/javascript'>
+        function AppViewModel()
+        {
+            self= this;
+            self.fullName = ko.observable("Diego Burlando");
+            /* Computed Observables */
+            self.compositName = ko.computed(function () { return self.fullName() + "| Constant Part |"; }, this);
+            /*     */
+            self.checkVisible = ko.observable(false);
+            self.toggleDetails = function (flag) { self.checkVisible(flag); }
+            self.disableDetails = function () { self.checkVisible(false); }
+            self.checkVisibility = function ()
+            {                            
+                if (!self.checkVisible()) self.toggleDetails(true);
+                else self.toggleDetails(false);
+            }
+
+        }
+        ko.applyBindings(new AppViewModel());
+    </script>
+</body>
+</html>
