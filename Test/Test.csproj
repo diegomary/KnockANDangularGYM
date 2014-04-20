@@ -229,8 +229,8 @@
     <Content Include="Images\Kings\9.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\example1_appviewmodel.js" />
-    <Content Include="Scripts\example4.js" />
+    <Content Include="Scripts\knockout1.js" />
+    <Content Include="Scripts\knockout3.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
     <Content Include="Scripts\i18n\angular-locale_af-za.js" />
     <Content Include="Scripts\i18n\angular-locale_af.js" />
@@ -510,12 +510,12 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Home\Example1.cshtml" />
-    <Content Include="Views\Home\Example2.cshtml" />
-    <Content Include="Views\Home\Example3.cshtml" />
+    <Content Include="Views\Home\Knockout1.cshtml" />
+    <Content Include="Views\Home\ShuffleCards.cshtml" />
+    <Content Include="Views\Home\Angular1.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Example4.cshtml" />
+    <Content Include="Views\Home\Knockout3.cshtml" />
     <Content Include="Scripts\version.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -526,8 +526,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Bach\" />
-    <Folder Include="Views\Kings\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

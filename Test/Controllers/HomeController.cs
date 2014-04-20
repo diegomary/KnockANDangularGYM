@@ -28,22 +28,22 @@ namespace Test.Controllers
             return View();
         }
 
-        public ActionResult Example1()
+        public ActionResult Knockout1()
         {
             return View();
         }
 
-        public ActionResult Example2()
+        public ActionResult ShuffleCards()
         {
             return View();
         }
 
-        public ActionResult Example3()
+        public ActionResult Angular1()
         {
             return View();
         }
 
-        public ActionResult Example4()
+        public ActionResult Knockout3()
         {
             return View();
         }
