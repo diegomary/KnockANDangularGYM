@@ -3,20 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Css/knock_style.css" rel="stylesheet" />
+    <title>@ViewBag.Title - My ASP.NET Application</title>  
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/knockout-3.1.0.js"></script>
   
     <style>
-        ul li {
+        #masterList > li {
             list-style-type: none;
             display: inline;
         }
     </style>
  </head>
 <body style="margin-left:100px;margin-right:100px">    
-    <ul>      
+    <ul id="masterList">      
         <li>
             @Html.ActionLink(  "Home", "Index", "Home")
         </li>
@@ -30,7 +29,7 @@
             @Html.ActionLink("To Do", "Angular1", "Home")
         </li>
         <li>
-            @Html.ActionLink("Bach Flowers", "Knockout3", "Home")
+            @Html.ActionLink("Bach Flowers", "Knockout2", "Home")
         </li>
     </ul>
     <hr>

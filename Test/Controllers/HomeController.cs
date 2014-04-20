@@ -43,7 +43,7 @@ namespace Test.Controllers
             return View();
         }
 
-        public ActionResult Knockout3()
+        public ActionResult Knockout2()
         {
             return View();
         }

@@ -1,15 +1,38 @@
-﻿<!DOCTYPE html>
+﻿@*@{Layout = null;}*@
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-        <script src="~/Scripts/angular.js">
- 
-
-         // Here Jquery is rendered in the master page so it comes first and replaces Jqlite that ships with Angular.
-        </script>        
 </head>
-<body>  
-   
+<body data-ng-app="moduleApp">
+    <div data-ng-controller="CustomerController">
+        Name:<br />
+        <input type="text" data-ng-model="inputData.name" placeholder="name" />
+        <br />
+        City:<br />
+        <input type="text" data-ng-model="inputData.city" placeholder="city" />
+        <br />
+        <button data-ng-click="addCustomer()">Add Customer</button>
+        <br />
+        <br />
+        Name: <input type="text" ng-model="nametosearch" placeholder="Type something" />&nbsp;&nbsp; {{ nametosearch }}
+        <button data-ng-click="getData()">Get Customers</button>
+        <ul>
+            <li data-ng-repeat="cust in customers | filter:nametosearch |orderBy:'name' ">{{ cust.name | uppercase }}&nbsp;&nbsp;&nbsp;{{cust.city}}</li>
+        </ul>
+    </div>
+    <div data-ng-controller="OrderController">
+        {{ codeName }}
+    </div>
+
+    <div data-ng-controller="DetailsController">
+
+        {{ detailName }}
+    </div>
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/solution_scripts/appcore.js"></script>
 </body>
 </html>
+
