@@ -83,7 +83,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Css\knock_style.css" />
     <Content Include="Database.sql" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap\css\bootstrap-theme.css.map" />
@@ -330,6 +329,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Css\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
