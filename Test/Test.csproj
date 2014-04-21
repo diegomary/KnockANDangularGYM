@@ -211,9 +211,7 @@
     <Content Include="Scripts\Jquery\jquery.validate.min.js" />
     <Content Include="Scripts\Jquery\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\Jquery\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\Knockout\knockout-3.1.0.debug.js" />
     <Content Include="Scripts\Knockout\knockout-3.1.0.js" />
-    <Content Include="Scripts\Knockout\knockout-3.1.0.util.js" />
     <Content Include="solution_scripts\CardShuffler\shuffler.js" />
     <Content Include="solution_scripts\Angular-1.1.5\angular-1.1.5.js" />
     <Content Include="solution_scripts\Angular-1.1.5\Animate-1.1.5.angularMove.css" />
