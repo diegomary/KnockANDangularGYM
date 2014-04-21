@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>  
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/knockout-3.1.0.js"></script>
-  
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/Jquery/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/Knockout/knockout-3.1.0.js"></script>  
     <style>
         #masterList > li {
             list-style-type: none;
@@ -36,6 +35,13 @@
         <li>
             @Html.ActionLink("Bach Flowers", "Knockout2", "Home")
         </li>
+
+
+        <li>
+            @Html.ActionLink("Bootstrap", "Bootstrap", "Home")
+        </li>
+
+
     </ul>
     <hr>
     @RenderBody()  

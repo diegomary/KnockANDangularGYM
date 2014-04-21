@@ -53,7 +53,12 @@ namespace Test.Controllers
         {
             return View();
         }
-     
+
+        public ActionResult Bootstrap()
+        {
+            return View();
+        }
+
 
         [HttpGet]
         public JsonResult GetData(string Data)

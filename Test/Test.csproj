@@ -86,7 +86,12 @@
     <Content Include="Css\knock_style.css" />
     <Content Include="Database.sql" />
     <Content Include="Global.asax" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Scripts\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Scripts\Jquery\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\Flowers\agrimony.jpg" />
     <Content Include="Images\Flowers\aspen.jpg" />
     <Content Include="Images\Flowers\beech.jpg" />
@@ -189,23 +194,28 @@
     <Content Include="Images\Kings\7.jpg" />
     <Content Include="Images\Kings\8.jpg" />
     <Content Include="Images\Kings\9.jpg" />
-    <Content Include="Scripts\knockout1.js" />
-    <Content Include="Scripts\knockout2.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-3.1.0.debug.js" />
-    <Content Include="Scripts\knockout-3.1.0.js" />
-    <Content Include="Scripts\knockout-3.1.0.util.js" />
-    <Content Include="Scripts\Product.js" />
-    <Content Include="Scripts\ProductsViewModel.js" />
-    <Content Include="Scripts\shuffler.js" />
+    <Content Include="Scripts\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Scripts\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Scripts\bootstrap\css\bootstrap.css" />
+    <Content Include="Scripts\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Scripts\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\bootstrap\js\bootstrap.js" />
+    <Content Include="Scripts\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Scripts\Knockout\knockout1.js" />
+    <Content Include="Scripts\Knockout\knockout2.js" />
+    <Content Include="Scripts\Jquery\jquery-1.10.2.js" />
+    <Content Include="Scripts\Jquery\jquery-1.10.2.min.js" />
+    <None Include="Scripts\Jquery\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Jquery\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\Jquery\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\Jquery\jquery.validate.js" />
+    <Content Include="Scripts\Jquery\jquery.validate.min.js" />
+    <Content Include="Scripts\Jquery\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Jquery\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Knockout\knockout-3.1.0.debug.js" />
+    <Content Include="Scripts\Knockout\knockout-3.1.0.js" />
+    <Content Include="Scripts\Knockout\knockout-3.1.0.util.js" />
+    <Content Include="solution_scripts\CardShuffler\shuffler.js" />
     <Content Include="solution_scripts\Angular-1.1.5\angular-1.1.5.js" />
     <Content Include="solution_scripts\Angular-1.1.5\Animate-1.1.5.angularMove.css" />
     <Content Include="solution_scripts\Angular-1.1.5\appcore.js" />
@@ -283,7 +293,7 @@
     <Content Include="solution_scripts\Angular-1.2.9\all-angular\page_style.css" />
     <Content Include="solution_scripts\Angular-1.2.9\all-angular\appcore.js" />
     <Content Include="Web.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\Jquery\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -310,6 +320,7 @@
     <Content Include="solution_scripts\Angular-1.1.5\Animate-1.1.5-angular3DCube.css" />
     <Content Include="solution_scripts\Angular-1.1.5\Animate-1.1.5angularVariant.css" />
     <Content Include="Views\Home\Angular129.cshtml" />
+    <Content Include="Views\Home\Bootstrap.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
