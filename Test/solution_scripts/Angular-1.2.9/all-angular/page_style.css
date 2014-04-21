@@ -1,0 +1,24 @@
+﻿.customers
+{
+     background:white;
+     border:1px solid black;
+     list-style:none;
+     margin:0;
+     padding:0 10px;
+}
+ul.customers > li.ng-enter {
+    -webkit-animation: swing 0.8s;
+    -moz-animation: swing 0.8s;
+    -ms-animation: swing 0.8s;
+     animation: swing 0.8s;
+}
+ul.customers > li.ng-leave {
+    -webkit-animation: rotateInDownRight 0.8s;
+    -moz-animation: rotateInDownRight 0.8s;
+    -ms-animation: rotateInDownRight 0.8s;
+     animation: rotateInDownRight 0.8s;
+}
+
+
+
+

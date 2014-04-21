@@ -1,10 +1,7 @@
-﻿/// <reference path="angular-1.1.5.js" />
-// In order to have angular intellisense enabled in this javascript file we can add the following line. However this is not sufficient to have angulare
-// functionality in the flow. The reference to angular.jas must be present in the html page prior the present file
+﻿/// <reference path="angular.js" />
 
-
-var moduleApp = angular.module('moduleApp', []);
-moduleApp.controller('CustomerController', ['$scope', function ($scope) {
+angular.module('moduleApp129', ['ngAnimate']).  // we need to inject the ngAnimate module
+controller('CustomerController', ['$scope', function ($scope) {
     $scope.customers = [];
     $scope.getInnerData = function (name) { alert(name); }
     $scope.getData = function () {
@@ -33,7 +30,3 @@ moduleApp.controller('CustomerController', ['$scope', function ($scope) {
          .controller('DetailsController', ['$scope', function ($scope) {
              $scope.detailName = "MAria Burlando";
          }]);
-
-
-
-  

@@ -38,10 +38,16 @@ namespace Test.Controllers
             return View();
         }
 
-        public ActionResult Angular1()
+        public ActionResult Angular115()
         {
             return View();
         }
+
+        public ActionResult Angular129()
+        {
+            return View();
+        }
+
 
         public ActionResult Knockout2()
         {
