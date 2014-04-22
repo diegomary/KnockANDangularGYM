@@ -13,6 +13,18 @@ namespace Test.Controllers
         public string text { get; set; }
       //  public string Email { get; set; }
     }
+
+    public class Customer
+    {
+
+        public string name { get; set; }
+        public string city { get; set; }
+    }
+
+
+
+
+
     public class ThoughtwithId
     {
         public int Id { get; set; }
@@ -69,6 +81,19 @@ namespace Test.Controllers
             th.Add(new Thought { text = "Practice Practice Practice and you'll get it done" });
             th.Add(new Thought { text = "Peace comes from thinking that nothing can hurt us." });
             th.Add(new Thought { text = "The main reason we need to improve is because we don't want to worsen." });
+            return Json(th, JsonRequestBehavior.AllowGet);
+        }
+
+
+        [HttpGet]
+        public JsonResult GetData1(string Data)
+        {
+            List<Customer> th = new List<Customer>();
+            th.Add(new Customer { name = "Ziggy stardust", city="Chicago" });
+            th.Add(new Customer { name = "Heedy Wahlin", city="Chandler" });
+            th.Add(new Customer { name = "Dave Jones", city="Phoenix" });
+            th.Add(new Customer { name = "Jamie Riley", city="Atlanta" });
+            th.Add(new Customer { name = "Thomas Winter", city="Seattle" });
             return Json(th, JsonRequestBehavior.AllowGet);
         }
 
