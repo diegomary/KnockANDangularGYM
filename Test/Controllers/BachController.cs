@@ -33,7 +33,6 @@ namespace Test.Controllers
                     dbContext.AllFlowers.Add(new Flower { Id = 12, Name = "Gentian", Description = "", ImagePath = @"../../Images/Flowers/gentian.jpg", FlowerColor = KnownColor.LightSalmon.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 13, Name = "Gorse", Description = "", ImagePath = @"../../Images/Flowers/gorse.jpg", FlowerColor = KnownColor.ForestGreen.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 14, Name = "Heather", Description = "", ImagePath = @"../../Images/Flowers/heather.jpg", FlowerColor = KnownColor.Cornsilk.ToString() });
-                   
                     dbContext.AllFlowers.Add(new Flower { Id = 15, Name = "Holly", Description = "", ImagePath = @"../../Images/Flowers/holly.jpg", FlowerColor = KnownColor.DarkRed.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 16, Name = "Honeysuckle", Description = "", ImagePath = @"../../Images/Flowers/honeysuc.jpg", FlowerColor = KnownColor.Blue.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 17, Name = "Hornbeam", Description = "", ImagePath = @"../../Images/Flowers/hornbeam.jpg", FlowerColor = KnownColor.Fuchsia.ToString() });
@@ -41,7 +40,6 @@ namespace Test.Controllers
                     dbContext.AllFlowers.Add(new Flower { Id = 19, Name = "Larch", Description = "", ImagePath = @"../../Images/Flowers/larch.jpg", FlowerColor = KnownColor.LightSalmon.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 20, Name = "Mimulus", Description = "", ImagePath = @"../../Images/Flowers/mimulus.jpg", FlowerColor = KnownColor.ForestGreen.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 21, Name = "Mustard", Description = "", ImagePath = @"../../Images/Flowers/mustard.jpg", FlowerColor = KnownColor.Cornsilk.ToString() });
-                    
                     dbContext.AllFlowers.Add(new Flower { Id = 22, Name = "Oak", Description = "", ImagePath = @"../../Images/Flowers/oak.jpg", FlowerColor = KnownColor.DarkRed.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 23, Name = "Olive", Description = "", ImagePath = @"../../Images/Flowers/olive.jpg", FlowerColor = KnownColor.Blue.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 24, Name = "Pine", Description = "", ImagePath = @"../../Images/Flowers/pine.jpg", FlowerColor = KnownColor.Fuchsia.ToString() });
@@ -49,7 +47,6 @@ namespace Test.Controllers
                     dbContext.AllFlowers.Add(new Flower { Id = 26, Name = "Rock Rose", Description = "", ImagePath = @"../../Images/Flowers/rockrose.jpg", FlowerColor = KnownColor.LightSalmon.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 27, Name = "Rock Water", Description = "", ImagePath = @"../../Images/Flowers/rockwate.jpg", FlowerColor = KnownColor.ForestGreen.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 28, Name = "Sclerantus", Description = "", ImagePath = @"../../Images/Flowers/sclerant.jpg", FlowerColor = KnownColor.Cornsilk.ToString() });
-                    
                     dbContext.AllFlowers.Add(new Flower { Id = 29, Name = "Star of Bethlem", Description = "", ImagePath = @"../../Images/Flowers/starbeth.jpg", FlowerColor = KnownColor.DarkRed.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 30, Name = "Sweet Chestnut", Description = "", ImagePath = @"../../Images/Flowers/swchest.jpg", FlowerColor = KnownColor.Blue.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 31, Name = "Vervain", Description = "", ImagePath = @"../../Images/Flowers/vervain.jpg", FlowerColor = KnownColor.Fuchsia.ToString() });
@@ -57,7 +54,6 @@ namespace Test.Controllers
                     dbContext.AllFlowers.Add(new Flower { Id = 33, Name = "Walnut", Description = "", ImagePath = @"../../Images/Flowers/walnut.jpg", FlowerColor = KnownColor.LightSalmon.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 34, Name = "Water Violet", Description = "", ImagePath = @"../../Images/Flowers/watervio.jpg", FlowerColor = KnownColor.ForestGreen.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 35, Name = "White Chestnut", Description = "", ImagePath = @"../../Images/Flowers/whiteche.jpg", FlowerColor = KnownColor.Cornsilk.ToString() });
-                   
                     dbContext.AllFlowers.Add(new Flower { Id = 36, Name = "Wild Oat", Description = "", ImagePath = @"../../Images/Flowers/wildoat.jpg", FlowerColor = KnownColor.DarkRed.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 37, Name = "Wild Rose", Description = "", ImagePath = @"../../Images/Flowers/wildrose.jpg", FlowerColor = KnownColor.Blue.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 38, Name = "Willow", Description = "", ImagePath = @"../../Images/Flowers/willow.jpg", FlowerColor = KnownColor.Fuchsia.ToString() });
