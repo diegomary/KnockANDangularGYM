@@ -25,7 +25,6 @@ namespace Test.Controllers
                     dbContext.AllFlowers.Add(new Flower { Id = 5, Name = "Cerato", Description = "", ImagePath = @"../../Images/Flowers/cerato.jpg", FlowerColor = KnownColor.LightSalmon.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 6, Name = "Cherry Plum", Description = "", ImagePath = @"../../Images/Flowers/cherrypl.jpg", FlowerColor = KnownColor.ForestGreen.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 7, Name = "Chestnut Bud", Description = "", ImagePath = @"../../Images/Flowers/chestbud.jpg", FlowerColor = KnownColor.Cornsilk.ToString() });
-                    
                     dbContext.AllFlowers.Add(new Flower { Id = 8, Name = "Chicory", Description = "", ImagePath = @"../../Images/Flowers/chicory.jpg", FlowerColor = KnownColor.DarkRed.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 9, Name = "Clematis", Description = "", ImagePath = @"../../Images/Flowers/clematis.jpg", FlowerColor = KnownColor.Blue.ToString() });
                     dbContext.AllFlowers.Add(new Flower { Id = 10, Name = "Crab Apple", Description = "", ImagePath = @"../../Images/Flowers/crabappl.jpg", FlowerColor = KnownColor.Fuchsia.ToString() });
